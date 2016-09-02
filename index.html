@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>GP Project Export Name -- WordPress Plugin for GlotPress by deckerweb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">GP Project Export Name -- WordPress Plugin for GlotPress</h1>
+      <h2 class="project-tagline">In GlotPress plugin change the export file name to project name, plus locale string (as a language code).</h2>
+      <a href="https://github.com/deckerweb/gp-project-export-name" class="btn">View on GitHub</a>
+      <a href="https://github.com/deckerweb/gp-project-export-name/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/deckerweb/gp-project-export-name/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="glotpress-plugin-gp-project-export-name" class="anchor" href="#glotpress-plugin-gp-project-export-name" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GlotPress Plugin: GP Project Export Name</h1>
+
+<ul>
+<li>Contributors: <a href="https://github.com/deckerweb">David Decker</a>, <a href="https://github.com/deckerweb/gp-project-export-name/graphs/contributors">contributors</a>
+</li>
+<li>Tags: glotpress, export, project, name, file name, filename, projects, translations, translation, download, saving</li>
+<li>Requires at least: 4.4.0</li>
+<li>Tested up to: 4.6.x</li>
+<li>Stable tag: master</li>
+<li>Donate link: <a href="http://ddwb.me/9s">http://ddwb.me/9s</a>
+</li>
+<li>License: GPL-2.0+</li>
+<li>License URI: <a href="http://www.opensource.org/licenses/gpl-license.php">http://www.opensource.org/licenses/gpl-license.php</a>
+</li>
+</ul>
+
+<p>In GlotPress plugin change the export file name to project name, plus locale string (as a language code).</p>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description:</h2>
+
+<p>Using native filters in the GlotPress plugin for WordPress to tweak the export file names to a more practical format/ string.</p>
+
+<p><em>Backstory:</em> In my private GlotPress install I only translate from English to German. Therefore I only always need to export/ save translation files with the German locale "de_DE". The project name as file name makes a lot of sense: using plugin name also as plugin slug and textdomain is common sense nowadays in WordPress universe. As a result I get file names like "my-plugin-name-de_DE.mo" that I only need to upload, package as ZIP or something like that. Pretty cool, hehe! :-)</p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features:</h2>
+
+<ul>
+<li>Install, activate and use. That's all!</li>
+<li>It works seamlessly in the background only using native GlotPress filters.</li>
+<li>Makes work of translators and plugin/ theme developers a bit more easier, hopefully.</li>
+<li>A plugin for "GlotPress as a WordPress plugin".</li>
+</ul>
+
+<h2>
+<a id="plugin-installation" class="anchor" href="#plugin-installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plugin Installation:</h2>
+
+<p><strong>Requirements/ Prerequisites</strong></p>
+
+<ul>
+<li><a href="https://wordpress.org/download/">WordPress v4.4.0 or higher</a></li>
+<li><a href="https://wordpress.org/plugins/glotpress/">Plugin: GlotPress v2.1.0 or higher</a></li>
+<li><em>PLEASE: For security and best support, always use the latest stable versions of WordPress, GlotPress and plugins!</em></li>
+</ul>
+
+<p><strong>Manual Upload</strong></p>
+
+<ul>
+<li>Download current .zip archive from master branch here, URL: <a href="https://github.com/deckerweb/gp-project-export-name/archive/master.zip">https://github.com/deckerweb/gp-project-export-name/archive/master.zip</a>
+</li>
+<li>Unzip the package, then <strong>rename the folder to <code>gp-project-export-name</code></strong>, then upload renamed folder via SFTP/ FTP to your WordPress plugin directory</li>
+<li>Activate the plugin</li>
+</ul>
+
+<p><strong>Via "GitHub Updater" Plugin</strong> <em>(recommended!)</em></p>
+
+<ul>
+<li>Install &amp; activate the "GitHub Updater" plugin, get from here: <a href="https://github.com/afragen/github-updater">https://github.com/afragen/github-updater</a>
+</li>
+<li>Recommended: set your API Token in the plugin's settings</li>
+<li>Go to "Settings &gt; GitHub Updater &gt; Install Plugin"</li>
+<li>Paste the GitHub URL <code>https://github.com/deckerweb/gp-project-export-name</code> in the "Plugin URI" field (branch "master" is pre-set), then hit the "Install Plugin" button there</li>
+<li>Install &amp; activate the plugin</li>
+</ul>
+
+<p><strong>Updates</strong></p>
+
+<ul>
+<li>Are done via the plugin "GitHub Updater" (see above) - leveraging the default WordPress update system!</li>
+<li>Setting your GitHub API Token is recommended! :)</li>
+<li>It's so easy and seamless you won't find any better solution for this ;-)</li>
+</ul>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage:</h2>
+
+<ul>
+<li>Uses name of project as main file name (or sub project - always the deepest level gets used), plus a locale language code (like "en_US" or "de_DE"), plus the file format extension.</li>
+<li>Example: Project name in GlotPress is "My Example Plugin" and locale is set to "it_IT"</li>
+<li>Result: filename for example will be: "my-example-plugin-it_IT.po" (or .mo or whatever extension selected from the dropdown...)</li>
+</ul>
+
+<h2>
+<a id="translations" class="anchor" href="#translations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Translations:</h2>
+
+<p>= Localization &amp; Internationalizaton:</p>
+
+<ul>
+<li>Used textdomain: <code>gp-project-export-name</code>
+</li>
+<li>Default <code>.pot</code> file included</li>
+<li>German translations included (<code>de_DE</code>)</li>
+<li>Plugin's own path for translations: <code>wp-content/plugins/gp-project-export-name/languages/gp-project-export-name-de_DE.mo</code>
+</li>
+<li>
+<em>Recommended:</em> Global WordPress lang dir path for translations: <code>wp-content/languages/plugins/gp-project-export-name-de_DE.mo</code> ---&gt; <em>NOTE: if this file/path exists it will be loaded at higher priority than the plugin path! This is the recommended path &amp; way to store your translations as it is update-safe and allows for custom translations!</em>
+</li>
+<li>Recommended translation tools: <em>Poedit Pro v1.8+</em> or <em>WordPress Plugin "Loco Translate"</em> or <em>your IDE/ Code Editor</em> or <em>old WordPress plugin "Codestyling Localization"</em> (for the brave who know what they are doing :) )</li>
+</ul>
+
+<h2>
+<a id="changelog---version-history" class="anchor" href="#changelog---version-history" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changelog - Version History:</h2>
+
+<p>--&gt; See plugin file <a href="https://github.com/deckerweb/gp-project-export-name/blob/master/CHANGES.md">CHANGES.md here</a></p>
+
+<p>Copyright (c) 2016 David Decker - DECKERWEB.de</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/deckerweb/gp-project-export-name">GP Project Export Name -- WordPress Plugin for GlotPress</a> is maintained by <a href="https://github.com/deckerweb">deckerweb</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
