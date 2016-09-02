@@ -1,0 +1,8 @@
+# Composer
+vendor/**/.git
+vendor/
+composer.lock
+composer.phar
+
+# macOS
+.DS_Store

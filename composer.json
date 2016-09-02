@@ -1,0 +1,23 @@
+{
+  "name": "deckerweb/gp-project-export-name",
+  "description": "WordPress plugin that tweaks the export file name for translation file export for the GlotPress plugin.",
+  "keywords": ["glotpress", "export", "projects", "file name"],
+  "type": "wordpress-plugin",
+  "homepage": "https://github.com/deckerweb/gp-project-export-name",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "David Decker",
+      "homepage": "http://deckerweb.de/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/deckerweb/gp-project-export-name/issues",
+    "source": "https://github.com/deckerweb/gp-project-export-name"
+  },
+  "require": {
+    "composer/installers": "^1.0",
+    "php": ">=5.3"
+  }
+}
