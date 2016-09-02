@@ -11,7 +11,7 @@
  * Plugin Name:       GP Project Export Name
  * Plugin URI:        https://github.com/deckerweb/gp-project-export-name
  * Description:       In GlotPress plugin change the export file name to project name, plus locale string (as a language code).
- * Version:           2016.09.01
+ * Version:           2016.09.02
  * Author:            David Decker - DECKERWEB
  * Author URI:        http://deckerweb.de/
  * License:           GPL-2.0+
