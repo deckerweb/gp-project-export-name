@@ -2,10 +2,11 @@
 
 * Contributors: [David Decker](https://github.com/deckerweb), [contributors](https://github.com/deckerweb/gp-project-export-name/graphs/contributors)
 * Tags: glotpress, export, project, name, file name, filename, projects, translations, translation, download, saving
-* Requires at least: 4.4.0
-* Tested up to: 4.6.x
+* Requires at least: 4.7.0
+* Tested up to: 4.9.8
+* Requires PHP: 5.6
 * Stable tag: master
-* Donate link: [http://ddwb.me/9s](http://ddwb.me/9s)
+* Donate link: [https://www.paypal.me/deckerweb](https://www.paypal.me/deckerweb)
 * License: GPL-2.0+
 * License URI: [http://www.opensource.org/licenses/gpl-license.php](http://www.opensource.org/licenses/gpl-license.php)
 
@@ -75,4 +76,4 @@ Using native filters in the GlotPress plugin for WordPress to tweak the export f
 --> See plugin file [CHANGES.md here](https://github.com/deckerweb/gp-project-export-name/blob/master/CHANGES.md)
 
 
-Copyright (c) 2016 David Decker - DECKERWEB.de
+Copyright (c) 2016-2018 David Decker - DECKERWEB.de

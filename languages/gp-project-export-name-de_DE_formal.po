@@ -1,9 +1,8 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: GP Project Export Name\n"
-"POT-Creation-Date: 2018-09-15 23:06+0200\n"
-"PO-Revision-Date: 2016-09-02 22:04+0200\n"
+"POT-Creation-Date: 2018-09-15 23:05+0200\n"
+"PO-Revision-Date: 2018-09-15 23:06+0200\n"
 "Last-Translator: David Decker DECKERWEB.de -- http://deckerweb.de/\n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -23,22 +22,24 @@ msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "GP Project Export Name"
-msgstr ""
+msgstr "GP Projekt-Exportname"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/deckerweb/gp-project-export-name"
-msgstr ""
+msgstr "https://github.com/deckerweb/gp-project-export-name"
 
 #. Description of the plugin/theme
 msgid ""
 "In GlotPress plugin change the export file name to project name, plus locale "
 "string (as a language code)."
 msgstr ""
+"Im GlotPress-Plugin den Exportdateinamen so ändern, dass er aus dem "
+"Projektnamen plus dem Lokale-Code besteht (Sprachcode)."
 
 #. Author of the plugin/theme
 msgid "David Decker - DECKERWEB"
-msgstr ""
+msgstr "David Decker - DECKERWEB.de"
 
 #. Author URI of the plugin/theme
 msgid "https://deckerweb.de/"
-msgstr ""
+msgstr "https://deckerweb.de/"

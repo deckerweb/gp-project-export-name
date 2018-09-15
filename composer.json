@@ -8,7 +8,7 @@
   "authors": [
     {
       "name": "David Decker",
-      "homepage": "http://deckerweb.de/",
+      "homepage": "https://deckerweb.de/",
       "role": "Developer"
     }
   ],
@@ -17,7 +17,6 @@
     "source": "https://github.com/deckerweb/gp-project-export-name"
   },
   "require": {
-    "composer/installers": "^1.0",
-    "php": ">=5.3"
+    "php": ">=5.6"
   }
 }
