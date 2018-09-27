@@ -38,7 +38,7 @@ add_action( 'gp_init', 'ddw_gp_filter_export_locale' );
 /**
  * Let user define a custom locale string for the export; otherwise use
  *   currently set user locale in user profile settings (if not set falls back
-     to WordPress general locale settings).
+ *   to WordPress general locale settings).
  *   (Reason: the GP filter 'gp_export_locale' currently does not work...)
  *
  * @since  2016.09.01
