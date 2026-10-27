@@ -1,0 +1,4 @@
+Bundled components by David Decker – DECKERWEB, GPL-2.0-or-later:
+deckerweb Plugin Library 1.1.0: https://github.com/deckerweb/deckerweb-plugin-library/releases/tag/v1.1.0
+deckerweb Updater 2.2.1: https://github.com/deckerweb/deckerweb-updater/releases/tag/v2.2.1
+Runtime copies are included unchanged. See the Library LICENSE and the plugin LICENSE.

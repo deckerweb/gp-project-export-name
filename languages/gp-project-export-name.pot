@@ -1,44 +1,682 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the GP Project Export Name package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: GP Project Export Name\n"
-"POT-Creation-Date: 2018-09-15 23:06+0200\n"
-"PO-Revision-Date: 2016-09-02 22:04+0200\n"
-"Last-Translator: David Decker DECKERWEB.de -- http://deckerweb.de/\n"
-"Language-Team: \n"
-"Language: de_DE\n"
+"Project-Id-Version: GP Project Export Name 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-27 08:46+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1.1\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-WPHeader: gp-project-export-name.php\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#. Plugin Name of the plugin/theme
-msgid "GP Project Export Name"
+#: work/gp-project-export-name/includes/class-admin.php:38
+msgid "Settings"
 msgstr ""
 
-#. Plugin URI of the plugin/theme
-msgid "https://github.com/deckerweb/gp-project-export-name"
-msgstr ""
-
-#. Description of the plugin/theme
+#: work/gp-project-export-name/includes/class-admin.php:47
 msgid ""
-"In GlotPress plugin change the export file name to project name, plus locale "
-"string (as a language code)."
+"The entries could not be read. Use one project/path = filename-start or "
+"language/set = language-code per line."
 msgstr ""
 
-#. Author of the plugin/theme
-msgid "David Decker - DECKERWEB"
+#: work/gp-project-export-name/includes/class-admin.php:52
+msgid ""
+"Check the entries: each project path or language/set may occur only once. "
+"Use letters, numbers, underscores and hyphens for the value after =."
 msgstr ""
 
-#. Author URI of the plugin/theme
-msgid "https://deckerweb.de/"
+#: work/gp-project-export-name/includes/class-admin.php:54
+msgid "Use at most 100 entries per field."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:63
+msgid ""
+"Check the filename pattern: keep {locale}, use only the listed placeholders, "
+"letters, numbers, underscores and hyphens, and leave out .po or other file "
+"extensions."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:75
+#: work/gp-project-export-name/includes/class-admin.php:178
+msgid ""
+"To change download names, activate GlotPress 4.0 or newer and choose a "
+"permalink structure other than Plain under Settings → Permalinks. Existing "
+"rules stay saved."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:90
+msgid "Apply this name to the draft"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:90
+msgid "Preview"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:90
+msgid "These saved project paths were not found on this website:"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:90
+msgid "No projects found."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:90
+msgid ""
+"Replace this project’s existing name in the unsaved draft? Save Changes is "
+"still required."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:90
+#: work/gp-project-export-name/includes/class-admin.php:212
+msgid "Project name in filenames"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:90
+msgid ""
+"Use a name containing only letters, numbers, underscores and hyphens "
+"(maximum 160 characters)."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:90
+msgid "The file could not be read or exceeds 64 KB."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:90
+msgid ""
+"The draft changed. Choose Find projects and check names again to refresh the "
+"examples."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:90
+msgid "The preview could not be loaded. Please try again."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:96
+#: work/gp-project-export-name/includes/updater-translations.php:41
+#: work/gp-project-export-name/includes/class-admin-tools.php:40
+#: work/gp-project-export-name/includes/class-admin-tools.php:189
+msgid "Permission denied."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:98
+#: work/gp-project-export-name/includes/class-admin-tools.php:191
+#: work/gp-project-export-name/includes/class-admin-tools.php:209
+msgid ""
+"GlotPress is not ready. Activate GlotPress and check its permalink "
+"requirements."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:104
+msgid ""
+"Project not found. Use the project search, or enter its full GlotPress path "
+"without the website address."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:114
+msgid "Default translation set"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:115
+msgid "Original GlotPress filename"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:117
+msgid ""
+"Some names would be identical. A --set- number is added so different "
+"translation sets keep distinct filenames within this project."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:117
+msgid ""
+"Examples use .po. An MO export, for example, keeps .mo instead. The preview "
+"does not save or download anything."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:173
+#: work/gp-project-export-name/includes/class-admin.php:228
+#: work/gp-project-export-name/includes/components.php:17
+msgid "Practical filenames for every translation."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:176
+msgid "Help with download names"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:176
+msgid "A suitable filename in a few steps."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:176
+#: work/gp-project-export-name/includes/class-admin.php:232
+msgid "Quick guide"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:179
+msgid ""
+"Another plugin also changes download names. Under Which plugin names the "
+"files?, choose whose rules should apply."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:180
+msgid ""
+"A fixed language code is set with GP_PROJECT_EXPORT_LOCALE. If valid, it "
+"replaces the exported language code. Variant rules still apply."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:181
+msgid ""
+"These settings apply only to this website. Deactivating or deleting the "
+"plugin keeps them for later use."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:182
+msgid "Recognizable downloads, less manual renaming"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:182
+msgid ""
+"Choose the project name and let the exported language complete the filename, "
+"for example my-plugin-de_DE.po. These settings change names for future "
+"GlotPress exports. They do not translate texts or install language files."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:186
+msgid "Choose how filenames are built"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:187
+#: work/gp-project-export-name/includes/class-admin-tools.php:108
+#: work/gp-project-export-name/includes/class-admin-tools.php:145
+#: work/gp-project-export-name/includes/class-admin-tools.php:261
+msgid "Filename pattern"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:189
+msgid ""
+"The recommended pattern builds names such as my-plugin-de_DE.po. Choose a "
+"preset below or edit the placeholders. Always keep {locale}; do not type a "
+"file extension."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:190
+msgid "What do the placeholders mean?"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:190
+msgid ""
+"The project name chosen below, otherwise the last part of its GlotPress path."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:190
+msgid ""
+"The exported language code, including any variant, for example de_DE or "
+"de_DE_formal."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:190
+msgid ""
+"The full project path with hyphens instead of slashes. A chosen {project} "
+"name does not replace {path}."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:190
+msgid "The translation set’s short name, for example default or formal."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:191
+msgid "Recommended: project and language"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:191
+#: work/gp-project-export-name/includes/class-admin.php:212
+#: work/gp-project-export-name/includes/class-admin-tools.php:137
+msgid "Project path"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:191
+msgid "Also include the translation set"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:192
+msgid "Choose a name for each project (optional)"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:193
+msgid ""
+"Usually, choose a project in the search below. For direct entry, use one "
+"full project path = desired name per line, for example my-plugin/stable = my-"
+"plugin. This name replaces {project}. Without an entry, the last part of the "
+"project path is used, for example stable."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:195
+msgid "Language variants (optional)"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:196
+msgid ""
+"GlotPress can hold several translation sets for one language, for example "
+"German informal and formal. A set named formal gets _formal automatically; "
+"other extra sets get -x- and their short name. Usually, no entry is needed "
+"here."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:197
+msgid ""
+"Only for a required custom code: one language/set = full language code per "
+"line, for example de/formal = de_DE_formal. These entries change filenames, "
+"not the languages installed in WordPress."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:199
+#: work/gp-project-export-name/includes/class-admin-tools.php:108
+msgid "Which plugin names the files?"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:200
+msgid "Choose whose filename rules apply"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:202
+#: work/gp-project-export-name/includes/class-admin-tools.php:107
+msgid "Automatic: this plugin unless another is detected"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:202
+#: work/gp-project-export-name/includes/class-admin-tools.php:107
+msgid "Use GP Project Export Name"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:202
+#: work/gp-project-export-name/includes/class-admin-tools.php:107
+msgid "Use GlotPress or another naming plugin"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:207
+msgid "Find projects and choose their filenames"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:208
+msgid ""
+"Find an existing GlotPress project. The name field controls {project}; Apply "
+"this name to the draft adds it to the form above. Preview checks all "
+"translation sets without saving. Finish with Save Changes."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:209
+msgid "Project name or path"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:210
+msgid "Find projects and check names"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:212
+msgid "Filename example and notes"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:212
+msgid "Actions"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:213
+msgid "Previous page"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:213
+msgid "Next page"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:214
+msgid ""
+"Project search needs JavaScript. Project mappings can also be edited in the "
+"text field above."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:216
+msgid "Check filenames before saving"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:217
+msgid "Full project path, without the website address"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:219
+msgid "Preview filenames"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:221
+msgid "The preview needs JavaScript. Saving settings works without JavaScript."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:224
+msgid "About GP Project Export Name"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:226
+msgid "Documentation"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:227
+#: work/gp-project-export-name/includes/class-admin.php:236
+msgid "Changelog"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:229
+msgid "Plugin repository"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin.php:232
+#: work/gp-project-export-name/includes/class-admin.php:237
+msgid "Close"
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:13
+msgid "Private mode must be boolean."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:15
+msgid "Invalid authentication provider."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:17
+msgid "The plugin must be installed in a stable slug directory."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:19
+msgid "Invalid GitHub repository URL."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:21
+msgid ""
+"The private update could not be authorized. Check the repository credentials "
+"and refresh updates."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:23
+msgid "Could not create the update download file."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:25
+msgid "The private update download failed. Check credentials and try again."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:27
+msgid "Could not access the update filesystem."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:29
+msgid "GitHub release does not contain the plugin main file."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:31
+msgid "Could not prepare the GitHub release package."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:33
+msgid "See the release on GitHub."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:35
+msgid ""
+"Git Updater is active. If a deckerweb installation or update fails, "
+"temporarily deactivate Git Updater and retry. Reactivate it afterwards if "
+"other plugins or themes need it. Only leave it disabled when those "
+"extensions have another reliable update provider."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:37
+msgid "Manage installed plugins"
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:39
+msgid "Dismiss this notice"
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:43
+msgid ""
+"Public catalog callbacks require both providers and cannot be used in "
+"private mode."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:45
+msgid "The approved release could not be verified."
+msgstr ""
+
+#: work/gp-project-export-name/includes/updater-translations.php:47
+msgid "The approved release changed. Refresh updates first."
+msgstr ""
+
+#: work/gp-project-export-name/includes/update-validation.php:18
+#: work/gp-project-export-name/includes/update-validation.php:21
+#: work/gp-project-export-name/includes/update-validation.php:23
+#: work/gp-project-export-name/includes/update-validation.php:35
+msgid "The update package could not be verified."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:28
+msgid ""
+"This is not a supported settings backup. Choose an unchanged JSON export "
+"from GP Project Export Name (file format version 1, up to 64 KB)."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:61
+msgid "Variant mapping not found."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:64
+msgid "Project mapping not found."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:66
+msgid "Choose which settings should return to their defaults."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:90
+msgid ""
+"Saving requires administrator permission and a working GlotPress "
+"installation."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:91
+msgid ""
+"Settings changed or the confirmation is invalid. Review the changes again."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:95
+msgid "The settings could not be saved."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:113
+#: work/gp-project-export-name/includes/class-admin-tools.php:136
+msgid "Name chosen for this project"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:113
+#: work/gp-project-export-name/includes/class-admin-tools.php:139
+msgid "Custom language code"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:124
+msgid ""
+"GlotPress or another naming plugin will name the files. The examples show "
+"what these rules would produce if GP Project Export Name were selected."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:125
+msgid ""
+"These rules will be used when GP Project Export Name names the downloads. "
+"Save Changes makes the draft apply to future exports."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:136
+msgid "Last part of the project path"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:142
+msgid "Language code fixed in the configuration"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:142
+msgid "Code of the exported language"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:144
+msgid "Translation set"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:157
+msgid "Unknown translation language."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:160
+msgid ""
+"This rule cannot produce a valid filename here. GlotPress’s original name "
+"will be used; check the pattern and project name."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:161
+msgid ""
+"Some names would be identical. A --set- number keeps the translation sets "
+"distinct."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:165
+msgid "This project has no translation sets to preview yet."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:196
+msgid "Use at most 160 characters for project search."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:217
+msgid "Settings saved."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:230
+msgid "Back up or restore your settings"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:236
+msgid "Review changes before saving"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:237
+msgid ""
+"Confirming replaces the saved filename rules on this website with the values "
+"shown below. Unsaved edits in the main form are not included. A dash means "
+"that an entry is removed. Back up the current settings first if needed."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:238
+msgid "No settings would change."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:239
+msgid "Setting"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:239
+msgid "Current value"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:239
+msgid "New value"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:242
+msgid "Project not found on this website; its mapping will be retained:"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:244
+msgid ""
+"Rule check for the first 20 projects; use the project overview to check "
+"further pages."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:249
+msgid "Confirm these changes"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:251
+msgid "Cancel and return to settings"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:253
+msgid ""
+"Save a backup of the filename settings, or transfer them to another website. "
+"This file contains saved rules only, not translations or user accounts."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:254
+msgid "Download settings backup (.json)"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:255
+msgid "Import settings"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:256
+msgid ""
+"Choose a settings backup downloaded from this plugin (up to 64 KB). Its "
+"contents appear below for review. Without JavaScript, paste the file’s text "
+"into the field instead."
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:257
+msgid "Backup file contents (JSON text)"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:258
+msgid "Review import"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:259
+msgid "Reset filename settings"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:260
+msgid "Settings to reset"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:261
+msgid "All chosen project names"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:261
+msgid "One chosen project name"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:261
+msgid "One custom language code"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:261
+msgid "All custom language codes"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:261
+msgid "Choice of naming plugin"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:261
+msgid "All filename settings"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:262
+msgid ""
+"For a single entry only: full project path or language/set, exactly as saved "
+"above"
+msgstr ""
+
+#: work/gp-project-export-name/includes/class-admin-tools.php:263
+msgid "Review reset"
 msgstr ""

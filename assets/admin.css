@@ -1,0 +1,64 @@
+/* Compact deckerweb administration; no provisional product icon. */
+.ddw-gpe{max-width:980px}
+.ddw-gpe .ddw-gpe-header{box-sizing:border-box;margin:24px 0 20px;padding:22px 24px;background:#fff;border:1px solid #dcdcde;border-radius:8px}
+.ddw-gpe .ddw-gpe-heading{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.ddw-gpe .ddw-gpe-header h1{margin:0;padding:0;color:#1d2327;font-size:26px;line-height:1.3}
+.ddw-gpe .ddw-gpe-version{padding:3px 8px;border:1px solid #dcdcde;border-radius:4px;color:#50575e;font-size:12px;line-height:1.5}
+.ddw-gpe .ddw-gpe-slogan{margin:8px 0 0;font-size:15px;line-height:1.5;color:#50575e}
+.ddw-gpe .wp-header-end{margin:0;border:0;visibility:hidden;clear:both}
+.ddw-gpe label{display:block;margin:12px 0 6px}
+.ddw-gpe #ddw-gpe-form h2,.ddw-gpe .ddw-preview h2{margin-top:28px}
+.ddw-gpe fieldset{min-width:0}
+.ddw-gpe textarea{max-width:100%}
+.ddw-gpe input,.ddw-gpe select{max-width:100%;box-sizing:border-box}
+.ddw-gpe code{overflow-wrap:anywhere}
+.ddw-gpe .ddw-preview{border-top:1px solid #c3c4c7;padding-top:16px;margin-top:24px}
+.ddw-gpe .ddw-gpe-footer{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 28px;margin:32px 0 16px;padding:20px 0;border-top:1px solid #ccd5d9;color:#52626d;font-size:13px;line-height:1.6}
+.ddw-gpe .ddw-gpe-footer strong{color:#245c73}
+.ddw-gpe .ddw-gpe-footer-links{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px}
+.ddw-gpe .ddw-gpe-footer p{font-size:13px;margin:4px 0 0}
+.ddw-gpe .ddw-gpe-footer-meta{display:flex;flex-wrap:wrap;gap:8px 20px}
+.ddw-gpe .ddw-gpe-footer a{color:#245c73;text-underline-offset:3px}
+.ddw-gpe :focus-visible{outline:2px solid #2271b1;outline-offset:3px}
+/* Closed-state guards also apply when another plugin forces dialog display. */
+.ddw-gpe dialog.ddw-gpe-history:not([open]),.ddw-gpe dialog.ddw-gpe-history[hidden]{display:none!important}
+.ddw-gpe dialog.ddw-gpe-history{box-sizing:border-box;width:min(880px,calc(100% - 32px));max-width:calc(100% - 32px);max-height:85vh;margin:auto;padding:0;border:1px solid #dcdcde;border-radius:12px;background:#fff;color:#1d2327;box-shadow:0 20px 80px #0004}
+.ddw-gpe .ddw-gpe-history::backdrop{background:#0006}
+.ddw-gpe .ddw-gpe-history-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 24px;border-bottom:1px solid #dcdcde}
+.ddw-gpe .ddw-gpe-history-heading h2{margin:0;padding:0;font-size:20px;line-height:1.4}
+.ddw-gpe .ddw-gpe-history-close{flex:none;margin:0;padding:0;border:0;background:none}
+.ddw-gpe .ddw-gpe-history-content{box-sizing:border-box;max-height:calc(85vh - 92px);overflow:auto;overflow-wrap:anywhere;margin:0;padding:24px;font:14px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.ddw-gpe .ddw-gpe-history-release+.ddw-gpe-history-release{border-top:1px solid #dcdcde;padding-top:20px;margin-top:24px}
+.ddw-gpe .ddw-gpe-history-version{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+.ddw-gpe .ddw-gpe-history-version h3{margin:0;padding:0;font-size:18px;line-height:1.4}
+.ddw-gpe .ddw-gpe-history-version time,.ddw-gpe .ddw-gpe-history-version>span{color:#52626d;font-size:13px}
+.ddw-gpe .ddw-gpe-history-entries{list-style:none;margin:12px 0 0;padding:0}
+.ddw-gpe .ddw-gpe-history-entries li{display:flex;align-items:baseline;gap:10px;margin:12px 0}
+.ddw-gpe .ddw-gpe-history-badge{box-sizing:border-box;flex:none;min-width:86px;padding:2px 8px;border-radius:4px;font-size:12px;font-weight:600;line-height:1.6;color:#1d2327;background:#edf0f2}
+.ddw-gpe .ddw-gpe-history-new{background:#e4f3e8;color:#1c5930}
+.ddw-gpe .ddw-gpe-history-improved{background:#e5edf9;color:#21466d}
+.ddw-gpe .ddw-gpe-history-fixed{background:#fff1dc;color:#6a470c}
+.ddw-gpe .ddw-gpe-history-misc{background:#eeebf5;color:#4b386b}
+@media(max-width:600px){.ddw-gpe .ddw-gpe-header{padding:18px}.ddw-gpe .ddw-gpe-header h1{font-size:23px}.ddw-gpe .ddw-gpe-footer{display:block}.ddw-gpe .ddw-gpe-footer-meta{margin-top:12px}.ddw-gpe .ddw-gpe-history-heading,.ddw-gpe .ddw-gpe-history-content{padding:16px}.ddw-gpe .ddw-gpe-history-entries li{display:block}.ddw-gpe .ddw-gpe-history-badge{display:inline-block;margin-inline-end:8px;margin-bottom:4px}}
+@media(forced-colors:active){.ddw-gpe .ddw-gpe-history-badge,.ddw-gpe .ddw-gpe-version{border:1px solid CanvasText}}
+/* Maintenance tools stay inside the native settings flow. */
+.ddw-gpe-tools,.ddw-gpe-projects{margin-top:28px;padding-top:12px;border-top:1px solid #c3c4c7}
+.ddw-gpe-tools details{margin:18px 0}.ddw-gpe-tools summary{cursor:pointer;font-weight:600;width:fit-content}.ddw-gpe-tools summary:focus-visible{outline:2px solid #2271b1;outline-offset:3px}
+.ddw-gpe-review{padding:16px;background:#fff;border:1px solid #72aee6;margin:16px 0}.ddw-gpe-table-wrap{max-width:100%;overflow-x:auto}.ddw-gpe-table-wrap td{overflow-wrap:anywhere}.ddw-gpe-base{width:100%;min-width:130px}.ddw-gpe-table-wrap code{white-space:normal;overflow-wrap:anywhere}.ddw-gpe-table-wrap th{min-width:120px}.ddw-preview .description{margin-top:4px}.ddw-preview li{margin-bottom:12px}
+
+.ddw-gpe [hidden]{display:none!important}
+/* Keep native review/confirmation forms immediately interactive across page loads. */
+@view-transition{navigation:none}
+/* Read-only guidance stays reachable without covering the settings. */
+.ddw-gpe .ddw-gpe-helpbar{position:sticky;top:42px;z-index:20;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 16px;padding:10px 14px;margin:0 0 20px;border:1px solid #c3c4c7;border-radius:6px;background:#fff;box-shadow:0 2px 4px #0000000a}
+.ddw-gpe .ddw-gpe-helpbar span{color:#50575e}.ddw-gpe .ddw-gpe-purpose{max-width:760px;margin:20px 0}.ddw-gpe .ddw-gpe-purpose h2{margin-bottom:8px}.ddw-gpe .ddw-gpe-purpose p{font-size:14px;line-height:1.65}
+.ddw-gpe .ddw-gpe-placeholders{margin:12px 0}.ddw-gpe .ddw-gpe-placeholders summary{cursor:pointer;width:fit-content}.ddw-gpe .ddw-gpe-placeholders dt{margin-top:10px;font-weight:600}.ddw-gpe .ddw-gpe-placeholders dd{margin:3px 0 0}
+.ddw-gpe .ddw-gpe-guide-content{font-size:15px;line-height:1.65;overscroll-behavior:contain}.ddw-gpe .ddw-gpe-guide-content p{font-size:inherit;line-height:inherit}.ddw-gpe .ddw-gpe-guide-content h3{margin:0 0 8px;font-size:17px;line-height:1.45}.ddw-gpe .ddw-gpe-guide-intro{margin-top:0}
+.ddw-gpe .ddw-gpe-guide-example{margin:20px 0 28px;padding:18px;border:1px solid #c5d9ed;border-radius:8px;background:#f4f8fc}.ddw-gpe .ddw-gpe-guide-example dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:14px 0}.ddw-gpe .ddw-gpe-guide-example dt{font-size:13px;color:#50575e;margin-bottom:6px}.ddw-gpe .ddw-gpe-guide-example dd{margin:0}.ddw-gpe .ddw-gpe-guide-example code{white-space:normal;overflow-wrap:anywhere}.ddw-gpe .ddw-gpe-guide-example p{margin-bottom:0;font-size:13px}
+.ddw-gpe .ddw-gpe-guide-steps{list-style:none;margin:0 0 24px;padding:0}.ddw-gpe .ddw-gpe-guide-steps>li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:14px;margin:0;padding:0 0 26px}.ddw-gpe .ddw-gpe-guide-number{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border:2px solid #2271b1;border-radius:50%;color:#135e96;background:#f0f6fc;font-size:17px;font-weight:600;box-sizing:border-box}.ddw-gpe .ddw-gpe-guide-steps p{margin:0 0 10px}.ddw-gpe .ddw-gpe-guide-tip{border-left:3px solid #72aee6;padding-left:12px;color:#50575e}
+@media(max-width:782px){.ddw-gpe .ddw-gpe-helpbar{top:56px}}
+@media(max-width:600px){.ddw-gpe .ddw-gpe-helpbar{top:8px}.ddw-gpe .ddw-gpe-guide-example dl{grid-template-columns:1fr}.ddw-gpe .ddw-gpe-guide-steps>li{grid-template-columns:36px minmax(0,1fr);gap:10px}.ddw-gpe .ddw-gpe-guide-number{width:32px;height:32px;font-size:15px}}
+@media(forced-colors:active){.ddw-gpe .ddw-gpe-guide-number,.ddw-gpe .ddw-gpe-helpbar,.ddw-gpe .ddw-gpe-guide-example{border-color:CanvasText}}
+.ddw-gpe dialog.ddw-gpe-history[open]:not([hidden]){display:flex!important;flex-direction:column}.ddw-gpe .ddw-gpe-history-heading{flex:none}.ddw-gpe .ddw-gpe-history-content{min-height:0;flex:1 1 auto}
+
+.ddw-gpe .ddw-gpe-header{display:flex;align-items:center;gap:20px}.ddw-gpe-icon{display:block;flex:0 0 64px}.ddw-gpe-icon img{display:block;width:64px;height:64px}.ddw-gpe-header-copy{min-width:0}@media(max-width:600px){.ddw-gpe .ddw-gpe-header{gap:14px}.ddw-gpe-icon{flex-basis:48px}.ddw-gpe-icon img{width:48px;height:48px}}

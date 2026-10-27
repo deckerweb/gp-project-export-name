@@ -1,0 +1,6 @@
+/.github export-ignore
+/tests export-ignore
+/.gitattributes export-ignore
+/tools export-ignore
+/assets/brand export-ignore
+/docs/screenshots export-ignore

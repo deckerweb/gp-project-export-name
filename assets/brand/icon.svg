@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc"><title id="title">GP Project Export Name — Datei &amp; Namensschild</title><desc id="desc">Original vector icon concept A. Rounded full-bleed background and centered motif.</desc><defs><linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#063F49"/><stop offset="1" stop-color="#117B75"/></linearGradient><radialGradient id="glow"><stop stop-color="#A1F0D6" stop-opacity=".14"/><stop offset="1" stop-color="#A1F0D6" stop-opacity="0"/></radialGradient><clipPath id="round"><rect width="1024" height="1024" rx="184"/></clipPath></defs><g clip-path="url(#round)"><rect width="1024" height="1024" fill="url(#bg)"/><circle cx="850" cy="180" r="650" fill="url(#glow)"/><g transform="translate(-20 17)">
+ <path d="M318 175H600L774 349V802Q774 844 732 844H318Q276 844 276 802V217Q276 175 318 175Z" fill="#000" opacity=".12"/>
+ <path d="M310 160H590L760 330V792Q760 830 722 830H310Q272 830 272 792V198Q272 160 310 160Z" fill="#F6FAFF"/>
+ <path d="M590 160V292Q590 330 628 330H760Z" fill="#B8DAEB"/>
+ <rect x="332" y="378" width="245" height="38" rx="19" fill="#ADC9DD"/><rect x="332" y="449" width="176" height="38" rx="19" fill="#ADC9DD"/>
+ <path d="M214 562H760Q784 562 800 578L884 662L800 746Q784 762 760 762H214Q180 762 180 728V596Q180 562 214 562Z" fill="#000" opacity=".12"/>
+ <path d="M214 548H760Q784 548 800 564L884 648L800 732Q784 748 760 748H214Q180 748 180 714V582Q180 548 214 548Z" fill="#67E8F9"/>
+ <circle cx="242" cy="648" r="23" fill="#0D3857"/>
+ <rect x="306" y="609" width="196" height="28" rx="14" fill="#0D3857"/><rect x="306" y="660" width="330" height="28" rx="14" fill="#0D3857"/>
+ </g></g></svg>

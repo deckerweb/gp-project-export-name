@@ -1,0 +1,72 @@
+name: Compatibility
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * 1'
+permissions:
+  contents: read
+jobs:
+  integration:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - php: '8.1'
+            wordpress: '6.4'
+            glotpress: '4.0.0'
+          - php: '8.1'
+            wordpress: latest
+            glotpress: latest
+          - php: '8.4'
+            wordpress: '6.4'
+            glotpress: latest
+          - php: '8.4'
+            wordpress: latest
+            glotpress: latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: test-root-only
+          MYSQL_DATABASE: gpe_test
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping -h localhost -ptest-root-only"
+          --health-interval=10s --health-timeout=5s --health-retries=10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mysqli, mbstring
+          tools: wp-cli
+          coverage: none
+      - name: PHP syntax
+        run: find . -name '*.php' -not -path './.git/*' -print0 | xargs -0 -n1 php -l
+      - name: Install disposable WordPress
+        env:
+          WP_VERSION: ${{ matrix.wordpress }}
+          GP_VERSION: ${{ matrix.glotpress }}
+        run: |
+          set -euo pipefail
+          site="$RUNNER_TEMP/gpe-wordpress"
+          wp core download --path="$site" --version="$WP_VERSION"
+          wp config create --path="$site" --dbname=gpe_test --dbuser=root --dbpass=test-root-only --dbhost=127.0.0.1:3306
+          wp core install --path="$site" --url=http://localhost --title='GPE tests' --admin_user=administrator --admin_password=test-install-only --admin_email=tests@example.org
+          wp rewrite structure '/%postname%/' --path="$site"
+          if [ "$GP_VERSION" = latest ]; then
+            wp plugin install glotpress --activate --path="$site"
+          else
+            wp plugin install glotpress --version="$GP_VERSION" --activate --path="$site"
+          fi
+          wp plugin install gp-download-name --version=0.6 --path="$site"
+          wp plugin install gp-use-slug-for-downloads --version=1.0 --path="$site"
+          wp plugin install gp-bulk-download-translations --version=1.2 --path="$site"
+          ln -s "$GITHUB_WORKSPACE" "$site/wp-content/plugins/gp-project-export-name"
+          wp plugin activate gp-project-export-name --path="$site"
+          GPE_TEST_SITE=1 wp eval-file "$GITHUB_WORKSPACE/tests/integration.php" --path="$site"
