@@ -46,6 +46,8 @@ try {
  ddw_gpe_test(DDW_GPE_Admin_Tools::commit($transfer,$baseline,$signature)===true,'reviewed candidate committed');
  ddw_gpe_test(DDW_GPE_Names::settings()===$candidate,'exact persisted rules');
  ddw_gpe_test(count(DDW_GPE_Admin_Tools::changes($rules,$candidate))===1,'exact diff');
+ $project=GP::$project->get($project->id);
+ $default=GP::$translation_set->by_project_id_slug_and_locale($project->id,'default','de');
  $sets=DDW_GPE_Names::sets($project->id,true);$names=array();
  foreach ($sets as $set) {
   $locale=GP_Locales::by_slug($set->locale);
@@ -64,8 +66,8 @@ try {
  foreach ($sets as $set) $collision_names[]=DDW_GPE_Names::filename($project,GP_Locales::by_slug($set->locale),$set,$colliding,'po');
  ddw_gpe_test(count($collision_names)===count(array_unique($collision_names)),'inspection still separates duplicate names');
  $path_rules=$rules;$path_rules['pattern']='{path}-{locale}';
- $explanation=DDW_GPE_Admin_Tools::explain($project,GP_Locales::by_slug('de'),$default ?? $sets[0],$path_rules);
- ddw_gpe_test(strpos($explanation,'custom')===false && strpos($explanation,'ci-gpe-example')!==false,'explain only used project source');
+ $explanation=DDW_GPE_Admin_Tools::explain($project,GP_Locales::by_slug('de'),$default,$path_rules);
+ ddw_gpe_test(strpos($explanation,'custom')===false && strpos($explanation,'ci-gpe-example')!==false,'explain only used project source: '.$explanation);
  foreach (array('en','de') as $language) {
   $guide=DDW_GPE_Guide::content()[$language]['quickstart'];
   ddw_gpe_test(count($guide['steps'])===5 && $guide['before']==='my-plugin-stable-de.po' && $guide['after']==='my-plugin-de_DE.po','five shared guide steps and accurate mapped example');
