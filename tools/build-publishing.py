@@ -17,7 +17,7 @@ for lang,data in d.items():
  text=q(data['quickstart']);steps=data['quickstart']['steps']
  # Attach images to their exact shared-source step, preserving all instruction text.
  for i,step in enumerate(steps):
-  image=['overview','project','preview','overview','export'][i]
+  image=['overview','project','preview','save','export'][i]
   needle=('   '+step['tip']+'\n\n') if step.get('tip') else ('   '+step['text']+'\n\n')
   caption=('GlotPress verwendet hier seine eigene Oberflächensprache.' if de and i==4 else step['title'])
   text=text.replace(needle,needle+'   !['+caption+']('+raw+'docs/screenshots/'+image+'-'+lang+'.png)\n\n',1)
