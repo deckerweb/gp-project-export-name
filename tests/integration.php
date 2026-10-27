@@ -18,6 +18,8 @@ function ddw_gpe_test($condition,$label) {
 $old=get_option('ddw_gpe_settings',null);$user=get_current_user_id();
 try {
  wp_set_current_user(1);DDW_GPE_Admin::settings();delete_option('ddw_gpe_settings');
+ global $wpdb;
+ ddw_gpe_test($wpdb->get_var($wpdb->prepare('SHOW TABLES LIKE %s',$wpdb->esc_like(GP::$project->table)))===GP::$project->table,'GlotPress database must be installed before tests');
  $parent=GP::$project->by_path('ci-gpe') ?: GP::$project->create(array('name'=>'GPE test','slug'=>'ci-gpe'));
  $project=GP::$project->by_path('ci-gpe/example') ?: GP::$project->create(array('name'=>'GPE Example','slug'=>'example','parent_project_id'=>$parent->id));
  foreach (array(array('de','default'),array('de','formal'),array('de','internal'),array('fr','default')) as $spec) if (!GP::$translation_set->by_project_id_slug_and_locale($project->id,$spec[1],$spec[0])) GP::$translation_set->create(array('name'=>$spec[1],'slug'=>$spec[1],'locale'=>$spec[0],'project_id'=>$project->id));

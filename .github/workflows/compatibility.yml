@@ -64,6 +64,8 @@ jobs:
           else
             wp plugin install glotpress --version="$GP_VERSION" --activate --path="$site"
           fi
+          # GlotPress creates its tables on an admin request; WP-CLI activation alone does not.
+          wp eval 'require_once ABSPATH . "wp-admin/includes/upgrade.php"; require_once GP_PATH . GP_INC . "schema.php"; require_once GP_PATH . GP_INC . "install-upgrade.php"; gp_upgrade_db();' --path="$site"
           wp plugin install gp-download-name --version=0.6 --path="$site"
           wp plugin install gp-use-slug-for-downloads --version=1.0 --path="$site"
           wp plugin install gp-bulk-download-translations --version=1.2 --path="$site"
