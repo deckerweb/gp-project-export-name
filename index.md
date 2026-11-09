@@ -8,7 +8,7 @@ layout: default
 
 Download GlotPress translations with names that are easier to recognize and prepare for their destination. Choose a project name, keep the exported language and distinguish informal, formal or other translation sets. The translation itself stays unchanged.
 
-Version 2.0.0 · WordPress 6.4+ · PHP 8.1+ · GlotPress 4.0+ with a permalink structure other than Plain for export features.
+Version 2.0.1 · WordPress 6.4+ · PHP 8.1+ · GlotPress 4.0+ with a permalink structure other than Plain for export features.
 
 [GitHub](https://github.com/deckerweb/gp-project-export-name) · [Wiki](https://github.com/deckerweb/gp-project-export-name/wiki) · [Downloads & Releases](https://github.com/deckerweb/gp-project-export-name/releases)
 

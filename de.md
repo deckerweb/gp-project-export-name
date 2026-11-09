@@ -8,7 +8,7 @@ layout: default
 
 GlotPress-Übersetzungen mit Dateinamen herunterladen, die sich leichter zuordnen und für ihren Einsatz vorbereiten lassen. Einen Projektnamen wählen, die exportierte Sprache beibehalten und Du-, Sie- oder andere Übersetzungssätze unterscheiden. Die Übersetzung selbst bleibt unverändert.
 
-Version 2.0.0 · WordPress ab 6.4 · PHP ab 8.1 · GlotPress ab 4.0 mit einer anderen Permalink-Struktur als Einfach für die Exportfunktionen.
+Version 2.0.1 · WordPress ab 6.4 · PHP ab 8.1 · GlotPress ab 4.0 mit einer anderen Permalink-Struktur als Einfach für die Exportfunktionen.
 
 [GitHub](https://github.com/deckerweb/gp-project-export-name) · [Wiki](https://github.com/deckerweb/gp-project-export-name/wiki) · [Downloads & Releases](https://github.com/deckerweb/gp-project-export-name/releases)
 
