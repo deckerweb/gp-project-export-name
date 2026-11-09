@@ -55,7 +55,7 @@ for language, data in DATA.items():
     labels = (['Kurzvorstellung', 'Auf einen Blick', 'Erste Schritte', 'Kurzanleitung', 'Namensmuster und Platzhalter', 'Dateinamen prüfen', 'Zuständiges Namensplugin', 'Sammel-Downloads', 'Fester Sprachcode', 'Updates und Datenschutz', 'Wechsel von der Altversion', 'Gespeicherte Daten', 'Projekte suchen', 'Einstellungen sichern und importieren', 'Einstellungen zurücksetzen', 'Fragen nach Themen', 'Änderungsverlauf'] if german else ['About', 'At a glance', 'Getting started', 'Quick guide', 'Filename patterns and placeholders', 'Check filenames', 'Responsible naming plugin', 'Bulk downloads', 'Fixed language code', 'Updates and privacy', 'Moving from the old version', 'Stored data', 'Find projects', 'Settings backup and import', 'Reset settings', 'FAQ by topic', 'Changelog'])
     topics = list(zip(labels[4:15], [data[key] for key in ['rules', 'preview', 'ownership', 'bulk', 'constant', 'updates', 'migration', 'data', 'projects', 'transfer', 'reset']]))
     language_link = '<a href="guide' + other + '.html">' + ('English' if german else 'Deutsch') + '</a>'
-    footer = '<footer><p>© 2016–2026 David Decker – DECKERWEB · ' + ('Plugin-Lizenz: GPL v2 oder höher.' if german else 'Plugin license: GPL v2 or later.') + '</p><p>' + ('Gemeinsame Komponenten: ' if german else 'Shared components: ') + 'deckerweb Library 1.1.0 / Updater 2.2.1, GPL-2.0-or-later. <a href="https://github.com/deckerweb/gp-project-export-name">GitHub</a></p></footer>'
+    footer = '<footer><p>© 2016–2026 David Decker – DECKERWEB · ' + ('Plugin-Lizenz: GPL v2 oder höher.' if german else 'Plugin license: GPL v2 or later.') + '</p><p>' + ('Gemeinsame Komponenten: ' if german else 'Shared components: ') + 'deckerweb Library 1.3.0 / Updater 2.4.0, GPL-2.0-or-later. <a href="https://github.com/deckerweb/gp-project-export-name">GitHub</a></p></footer>'
 
     def page(body):
         """Wrap local, fully escaped documentation in a portable page."""
@@ -67,7 +67,7 @@ for language, data in DATA.items():
     body += '<h2>' + labels[2] + '</h2>' + paragraphs(data['start']) + quick_html(data['quickstart'])
     markdown = '# ' + data['title'] + '\n\n[' + ('English' if german else 'Deutsch') + '](' + ('../README.md' if german else 'docs/README-de.md') + ')\n\n'
     banner = ('../' if german else '') + 'assets/brand/banner-' + language + '-1280x640.png'
-    markdown += '![' + data['tagline'] + '](' + banner + ')\n\n**2.0.0** · WordPress 6.4+ · PHP 8.1+ · GlotPress 4.0+\n\n'
+    markdown += '![' + data['tagline'] + '](' + banner + ')\n\n**2.0.1** · WordPress 6.4+ · PHP 8.1+ · GlotPress 4.0+\n\n'
     markdown += '[' + ('Bebilderte Anleitung' if german else 'Illustrated guide') + '](https://github.com/deckerweb/gp-project-export-name/wiki/' + ('Anleitung' if german else 'User-guide') + ') · [Wiki](https://github.com/deckerweb/gp-project-export-name/wiki)\n\n'
     markdown += '## ' + labels[0] + '\n\n' + data['about'] + '\n\n' + data['requirements'] + '\n\n'
     prefix = '' if german else 'docs/'
@@ -104,7 +104,7 @@ for language, data in DATA.items():
             markdown += lines
             changes += lines
     body += '<h2>' + labels[16] + '</h2>' + history
-    markdown += '## ' + ('Projekt und Hilfe' if german else 'Project and help') + '\n\n' + ('2016 von David Decker – DECKERWEB für einen eigenen GlotPress-Ablauf entwickelt.' if german else 'Originally created in 2016 by David Decker – DECKERWEB for a personal GlotPress workflow.') + '\n\n[GitHub](https://github.com/deckerweb/gp-project-export-name) · [Issues](https://github.com/deckerweb/gp-project-export-name/issues) · [' + ('Sicherheitsrichtlinie' if german else 'Security policy') + '](' + ('../SECURITY-de.md' if german else 'SECURITY.md') + ')\n\nCopyright © 2016–2026 David Decker – DECKERWEB. ' + ('Plugin-Lizenz: GPL v2 oder höher.' if german else 'Plugin license: GPL v2 or later.') + '\n\nLibrary 1.1.0 / Updater 2.2.1: David Decker – DECKERWEB, GPL-2.0-or-later.\n'
+    markdown += '## ' + ('Projekt und Hilfe' if german else 'Project and help') + '\n\n' + ('2016 von David Decker – DECKERWEB für einen eigenen GlotPress-Ablauf entwickelt.' if german else 'Originally created in 2016 by David Decker – DECKERWEB for a personal GlotPress workflow.') + '\n\n[GitHub](https://github.com/deckerweb/gp-project-export-name) · [Issues](https://github.com/deckerweb/gp-project-export-name/issues) · [' + ('Sicherheitsrichtlinie' if german else 'Security policy') + '](' + ('../SECURITY-de.md' if german else 'SECURITY.md') + ')\n\nCopyright © 2016–2026 David Decker – DECKERWEB. ' + ('Plugin-Lizenz: GPL v2 oder höher.' if german else 'Plugin license: GPL v2 or later.') + '\n\nLibrary 1.3.0 / Updater 2.4.0: David Decker – DECKERWEB, GPL-2.0-or-later.\n'
     markdown += '\n[Ko-fi](https://ko-fi.com/deckerweb) · [Buy Me a Coffee](https://buymeacoffee.com/daveshine) · [PayPal](https://paypal.me/deckerweb)\n'
     markdown = markdown.replace('](' + prefix + 'quickstart' + suffix + '.html)', '](https://github.com/deckerweb/gp-project-export-name/wiki/' + ('Anleitung' if german else 'User-guide') + ')').replace('](' + prefix + 'guide' + suffix + '.html)', '](https://github.com/deckerweb/gp-project-export-name/wiki/' + ('FAQ-Deutsch' if german else 'FAQ') + ')')
     (ROOT / ('docs/README-de.md' if german else 'README.md')).write_text(markdown)
@@ -123,7 +123,7 @@ QUICK_STYLE = '''.ddw-gpe-quick-guide{line-height:1.65;overflow-wrap:anywhere}.d
 
 # The directory-format readme remains reproducible, although no directory release is made.
 d = DATA['en']
-readme = '=== GP Project Export Name ===\nContributors: daveshine\nTags: glotpress, translations, export\nRequires at least: 6.4\nTested up to: 7.1.3\nRequires PHP: 8.1\nStable tag: 2.0.0\nLicense: GPLv2 or later\nLicense URI: https://www.gnu.org/licenses/gpl-2.0.html\n\nChoose recognizable GlotPress download names, check language variants and follow a five-step guide.\n\n== Description ==\n\n' + d['about'] + '\n\n' + d['requirements'] + '\n\n' + ''.join('* ' + item + '\n' for item in d['features']) + '\n' + d['updates'] + '\n\n== Installation ==\n\n' + d['start'] + '\n\n== Quick guide ==\n\n'
+readme = '=== GP Project Export Name ===\nContributors: daveshine\nTags: glotpress, translations, export\nRequires at least: 6.4\nTested up to: 7.1\nRequires PHP: 8.1\nStable tag: 2.0.1\nLicense: GPLv2 or later\nLicense URI: https://www.gnu.org/licenses/gpl-2.0.html\n\nChoose recognizable GlotPress download names, check language variants and follow a five-step guide.\n\n== Description ==\n\n' + d['about'] + '\n\n' + d['requirements'] + '\n\n' + ''.join('* ' + item + '\n' for item in d['features']) + '\n' + d['updates'] + '\n\n== Installation ==\n\n' + d['start'] + '\n\n== Quick guide ==\n\n'
 for number, step in enumerate(d['quickstart']['steps'], 1):
     readme += str(number) + '. ' + step['title'] + '\n' + step['text'] + '\n\n'
 readme += '== Frequently Asked Questions ==\n\n'

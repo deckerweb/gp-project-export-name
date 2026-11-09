@@ -45,6 +45,46 @@ return static function ( string $message ): string {
             return __( 'The approved release could not be verified.', 'gp-project-export-name' );
         case 'The approved release changed. Refresh updates first.':
             return __( 'The approved release changed. Refresh updates first.', 'gp-project-export-name' );
+        case 'Catalog diagnostics require a public catalog provider.':
+            return __( 'Catalog diagnostics require a public catalog provider.', 'gp-project-export-name' );
+        case 'Catalog approval':
+            return __( 'Catalog approval', 'gp-project-export-name' );
+        case 'Package download':
+            return __( 'Package download', 'gp-project-export-name' );
+        case 'Checksum verification':
+            return __( 'Checksum verification', 'gp-project-export-name' );
+        case 'Archive verification':
+            return __( 'Archive verification', 'gp-project-export-name' );
+        case 'The update server could not be reached. Try again later.':
+            return __( 'The update server could not be reached. Try again later.', 'gp-project-export-name' );
+        case 'The update request timed out. Try again later.':
+            return __( 'The update request timed out. Try again later.', 'gp-project-export-name' );
+        case 'The update server address could not be resolved.':
+            return __( 'The update server address could not be resolved.', 'gp-project-export-name' );
+        case 'The secure connection to the update server failed.':
+            return __( 'The secure connection to the update server failed.', 'gp-project-export-name' );
+        case 'The update server returned an unsuccessful HTTP response.':
+            return __( 'The update server returned an unsuccessful HTTP response.', 'gp-project-export-name' );
+        case 'The update provider did not return valid update data.':
+            return __( 'The update provider did not return valid update data.', 'gp-project-export-name' );
+        case 'The package does not match the approved checksum. Installation was stopped.':
+            return __( 'The package does not match the approved checksum. Installation was stopped.', 'gp-project-export-name' );
+        case 'The archive or plugin identity could not be verified. Installation was stopped.':
+            return __( 'The archive or plugin identity could not be verified. Installation was stopped.', 'gp-project-export-name' );
+        case 'Update stopped at %1$s: %2$s':
+            /* translators: 1: update stage, 2: fixed explanation. */
+            return __( 'Update stopped at %1$s: %2$s', 'gp-project-export-name' );
+        case 'HTTP status: %d.':
+            /* translators: %d: HTTP error status. */
+            return __( 'HTTP status: %d.', 'gp-project-export-name' );
+        case 'Invalid private download limits.':
+            return __( 'Invalid private download limits.', 'gp-project-export-name' );
+        case 'Invalid package cleanup provider.':
+            return __( 'Invalid package cleanup provider.', 'gp-project-export-name' );
+        case 'Safe package cleanup is unavailable for this update provider.':
+            return __( 'Safe package cleanup is unavailable for this update provider.', 'gp-project-export-name' );
+        case 'The update package identity, version or requirements could not be verified.':
+            return __( 'The update package identity, version or requirements could not be verified.', 'gp-project-export-name' );
         default:
             return $message;
     }

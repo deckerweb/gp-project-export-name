@@ -2,9 +2,9 @@
 Contributors: daveshine
 Tags: glotpress, translations, export
 Requires at least: 6.4
-Tested up to: 7.1.3
+Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Choose recognizable GlotPress download names, check language variants and follow
 
 Download GlotPress translations with names that are easier to recognize and prepare for their destination. Choose a project name, keep the exported language and distinguish informal, formal or other translation sets. The translation itself stays unchanged.
 
-Version 2.0.0 · WordPress 6.4+ · PHP 8.1+ · GlotPress 4.0+ with a permalink structure other than Plain for export features.
+Version 2.0.1 · WordPress 6.4+ · PHP 8.1+ · GlotPress 4.0+ with a permalink structure other than Plain for export features.
 
 * Choose recognizable project names instead of renaming each downloaded file.
 * Use the exported language, including formal and other variants.
@@ -74,6 +74,9 @@ GlotPress 4.0 or newer must be active with a permalink structure other than Plai
 Full documentation and FAQ: docs/guide.html and docs/guide-de.html in this package.
 
 == Changelog ==
+
+= 2.0.1 =
+* Fixed: Updated deckerweb Library to 1.3.0 and Updater to 2.4.0: normal updates are independent of the catalog, with bounded downloads and stricter package checks.
 
 = 2.0.0 =
 * New: Configure project names, filename patterns and language variants on a dedicated settings page, with project search and a live preview.

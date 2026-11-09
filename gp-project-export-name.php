@@ -3,7 +3,7 @@
  * Plugin Name: GP Project Export Name
  * Plugin URI: https://github.com/deckerweb/gp-project-export-name
  * Description: Give GlotPress downloads recognizable project and language names, with previews and step-by-step help.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Requires at least: 6.4
  * Requires PHP: 8.1
  * Author: David Decker – DECKERWEB
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( version_compare( PHP_VERSION, '8.1', '<' ) || version_compare( get_bloginfo( 'version' ), '6.4', '<' ) ) { return; }
 
-define( 'DDW_GPE_VERSION', '2.0.0' );
+define( 'DDW_GPE_VERSION', '2.0.1' );
 define( 'DDW_GPE_FILE', __FILE__ );
 define( 'DDW_GPE_REPO', 'https://github.com/deckerweb/gp-project-export-name' );
 require_once __DIR__ . '/includes/class-export-names.php';

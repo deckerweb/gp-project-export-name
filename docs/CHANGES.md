@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1 · 2026-11-09
+
+- **Fixed:** Updated deckerweb Library to 1.3.0 and Updater to 2.4.0: normal updates are independent of the catalog, with bounded downloads and stricter package checks.
+
 ## 2.0.0 · 2026-10-27
 
 - **New:** Configure project names, filename patterns and language variants on a dedicated settings page, with project search and a live preview.

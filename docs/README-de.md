@@ -4,7 +4,7 @@
 
 ![Praktische Dateinamen für jede Übersetzung.](../assets/brand/banner-de-1280x640.png)
 
-**2.0.0** · WordPress 6.4+ · PHP 8.1+ · GlotPress 4.0+
+**2.0.1** · WordPress 6.4+ · PHP 8.1+ · GlotPress 4.0+
 
 [Bebilderte Anleitung](https://github.com/deckerweb/gp-project-export-name/wiki/Anleitung) · [Wiki](https://github.com/deckerweb/gp-project-export-name/wiki)
 
@@ -12,7 +12,7 @@
 
 GlotPress-Übersetzungen mit Dateinamen herunterladen, die sich leichter zuordnen und für ihren Einsatz vorbereiten lassen. Einen Projektnamen wählen, die exportierte Sprache beibehalten und Du-, Sie- oder andere Übersetzungssätze unterscheiden. Die Übersetzung selbst bleibt unverändert.
 
-Version 2.0.0 · WordPress ab 6.4 · PHP ab 8.1 · GlotPress ab 4.0 mit einer anderen Permalink-Struktur als Einfach für die Exportfunktionen.
+Version 2.0.1 · WordPress ab 6.4 · PHP ab 8.1 · GlotPress ab 4.0 mit einer anderen Permalink-Struktur als Einfach für die Exportfunktionen.
 
 [Kurzanleitung](https://github.com/deckerweb/gp-project-export-name/wiki/Anleitung) · [Vollständige Anleitung und FAQ](https://github.com/deckerweb/gp-project-export-name/wiki/FAQ-Deutsch)
 
@@ -158,6 +158,10 @@ GlotPress ab Version 4.0 muss mit einer anderen Permalink-Struktur als Einfach a
 
 ## Änderungsverlauf
 
+### 2.0.1 · 2026-11-09
+
+- **Behoben:** deckerweb Library auf 1.3.0 und Updater auf 2.4.0 aktualisiert: normale Updates unabhängig vom Katalog, begrenzte Downloads und strengere Paketprüfung.
+
 ### 2.0.0 · 2026-10-27
 
 - **Neu:** Projektnamen, Namensmuster und Sprachvarianten auf einer eigenen Einstellungsseite festlegen – mit Projektsuche und Vorschau.
@@ -191,6 +195,6 @@ GlotPress ab Version 4.0 muss mit einer anderen Permalink-Struktur als Einfach a
 
 Copyright © 2016–2026 David Decker – DECKERWEB. Plugin-Lizenz: GPL v2 oder höher.
 
-Library 1.1.0 / Updater 2.2.1: David Decker – DECKERWEB, GPL-2.0-or-later.
+Library 1.3.0 / Updater 2.4.0: David Decker – DECKERWEB, GPL-2.0-or-later.
 
 [Ko-fi](https://ko-fi.com/deckerweb) · [Buy Me a Coffee](https://buymeacoffee.com/daveshine) · [PayPal](https://paypal.me/deckerweb)

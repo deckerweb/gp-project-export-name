@@ -4,7 +4,7 @@
 
 ![Practical filenames for every translation.](assets/brand/banner-en-1280x640.png)
 
-**2.0.0** · WordPress 6.4+ · PHP 8.1+ · GlotPress 4.0+
+**2.0.1** · WordPress 6.4+ · PHP 8.1+ · GlotPress 4.0+
 
 [Illustrated guide](https://github.com/deckerweb/gp-project-export-name/wiki/User-guide) · [Wiki](https://github.com/deckerweb/gp-project-export-name/wiki)
 
@@ -12,7 +12,7 @@
 
 Download GlotPress translations with names that are easier to recognize and prepare for their destination. Choose a project name, keep the exported language and distinguish informal, formal or other translation sets. The translation itself stays unchanged.
 
-Version 2.0.0 · WordPress 6.4+ · PHP 8.1+ · GlotPress 4.0+ with a permalink structure other than Plain for export features.
+Version 2.0.1 · WordPress 6.4+ · PHP 8.1+ · GlotPress 4.0+ with a permalink structure other than Plain for export features.
 
 [Quick guide](https://github.com/deckerweb/gp-project-export-name/wiki/User-guide) · [Full guide and FAQ](https://github.com/deckerweb/gp-project-export-name/wiki/FAQ)
 
@@ -158,6 +158,10 @@ GlotPress 4.0 or newer must be active with a permalink structure other than Plai
 
 ## Changelog
 
+### 2.0.1 · 2026-11-09
+
+- **Fixed:** Updated deckerweb Library to 1.3.0 and Updater to 2.4.0: normal updates are independent of the catalog, with bounded downloads and stricter package checks.
+
 ### 2.0.0 · 2026-10-27
 
 - **New:** Configure project names, filename patterns and language variants on a dedicated settings page, with project search and a live preview.
@@ -191,6 +195,6 @@ Originally created in 2016 by David Decker – DECKERWEB for a personal GlotPres
 
 Copyright © 2016–2026 David Decker – DECKERWEB. Plugin license: GPL v2 or later.
 
-Library 1.1.0 / Updater 2.2.1: David Decker – DECKERWEB, GPL-2.0-or-later.
+Library 1.3.0 / Updater 2.4.0: David Decker – DECKERWEB, GPL-2.0-or-later.
 
 [Ko-fi](https://ko-fi.com/deckerweb) · [Buy Me a Coffee](https://buymeacoffee.com/daveshine) · [PayPal](https://paypal.me/deckerweb)
