@@ -44,8 +44,16 @@ jobs:
         with:
           php-version: ${{ matrix.php }}
           extensions: mysqli, mbstring
-          tools: wp-cli
+          tools: none
           coverage: none
+      - name: Install verified WP-CLI
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --connect-timeout 20 https://github.com/wp-cli/wp-cli/releases/download/v2.12.0/wp-cli-2.12.0.phar -o "$RUNNER_TEMP/wp"
+          echo "ce34ddd838f7351d6759068d09793f26755463b4a4610a5a5c0a97b68220d85c  $RUNNER_TEMP/wp" | sha256sum --check --strict
+          chmod +x "$RUNNER_TEMP/wp"
+          echo "$RUNNER_TEMP" >> "$GITHUB_PATH"
+          php "$RUNNER_TEMP/wp" --version
       - name: PHP syntax
         run: find . -name '*.php' -not -path './.git/*' -print0 | xargs -0 -n1 php -l
       - name: Install disposable WordPress
